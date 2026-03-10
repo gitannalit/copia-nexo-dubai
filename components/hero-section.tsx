@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Sparkles, CheckCircle2, Clock, Shield, Award } from "lucide-react"
 import { useState, useEffect } from "react"
 import { FormModal } from "@/components/form-modal"
-import Image from "next/image"
+
 
 export function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false)
@@ -189,14 +189,10 @@ export function HeroSection() {
               </div>
 
               <div className="mb-0 flex justify-start">
-                <Image
-                  src="/nexo-dubai-logo.png"
-                  alt="Nexo Dubai"
-                  width={400}
-                  height={120}
-                  className="h-auto w-64 sm:w-80 md:w-96 lg:w-[400px]"
-                  priority
-                />
+                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight">
+                  <span style={{ color: "#D6B56C" }}>NEXO</span>
+                  <span className="text-foreground ml-2 sm:ml-3">DUBAI</span>
+                </h2>
               </div>
 
               <div className="mb-0 mt-0">
